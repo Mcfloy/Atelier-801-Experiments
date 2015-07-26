@@ -6,7 +6,7 @@
 
 	$router->map('GET', '', function() {
 		require_once __DIR__ . '/controllers/index/index.php';
-	}, 'index');
+	});
 
 	$router->map('GET', 'leaderboard/[a:game]/', function($game) {
 		require_once __DIR__ . '/controllers/leaderboard/leaderboard.php';
@@ -20,6 +20,9 @@
 		require_once __DIR__ . '/controllers/tribe/tribe.php';
 	});
 
+	$router->map('GET', 'soundboard', function() {
+		require_once __DIR__ . '/controllers/soundboard/soundboard.php';
+	});
 
 	$match = $router->match();
 

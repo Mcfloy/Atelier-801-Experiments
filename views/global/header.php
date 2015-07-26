@@ -49,7 +49,7 @@
 								<li><a href="#">Modules Lua</a></li>
 								<li><a href="#">Modules 801</a></li>
 								<li><a href="#">Soundboard</a></li>
-								<li><a href="#">Standalone</a>
+								<li><a href="/Atelier%20801%20Experiments/soundboard">Standalone</a>
 							</ul>
 						</li>
 						<li class="dropdown">

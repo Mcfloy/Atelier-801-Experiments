@@ -4,7 +4,7 @@
 			<div class="panel-heading">Cahier des charges exhaustif</div>
 			<div class="panel-body">
 				<ul>
-					<li>Possibilité d'accéder à un profil avec les données de tous les jeux d'A801</li>
+					<li><i class="fa fa-check"></i> Possibilité d'accéder à un profil avec les données de tous les jeux d'A801</li>
 					<li>Obtenir le classement par jeu puis de l'ensemble des jeux</li>
 					<li>Classement en grille par avatar</li>
 					<li>Application mobile d'Atelier 801 Experiments</li>
@@ -12,8 +12,9 @@
 					<li>Voir en temps réel qui est là sur tous les jeux d'A801</li>
 					<li>Page de questions/réponses</li>
 					<li>Outil pour créer des tutos</li>
-					<li>Soundboard</li>
+					<li><i class="fa fa-arrow-right"></i> Soundboard</li>
 					<li>Chaque joueur pourra diffuser ses modules LUA</li>
+					<li>Refactoring partielle du site en POO</li>
 				</ul>
 			</div>
 		</div>
