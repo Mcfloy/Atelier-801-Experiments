@@ -1,8 +1,3 @@
-<style type="text/css">
-	table tbody tr td {
-		vertical-align: middle !important;
-	}
-</style>
 <ul class="breadcrumb">
 	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
 	<li><a href="#">Joueur</a></li>
@@ -306,3 +301,4 @@
 		</div>
 	</div>
 </div>
+<link rel="stylesheet" type="text/css" href="ressources/css/player.css" />

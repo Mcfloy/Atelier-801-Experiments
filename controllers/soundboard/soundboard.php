@@ -136,13 +136,55 @@
 		"12" => "Tout ce temps pour écrire ça !"
 	];
 
+	$cryquinette =
+	[
+		"01" => "Amusez-vous bien !",
+		"02" => "C'est génial...",
+		"03" => "C'est tout c'que j'ai à dire",
+		"04" => "De toute la soirée",
+		"05" => "Et ma vie est super",
+		"06" => "J'ai pas écouté ce qui vient de s'passer",
+		"07" => "Voilà"
+	]; 
+
+	$aewing =
+	[
+		"01" => "*Présentation*",
+		"02" => "Ça marche pas bien",
+		"03" => "Celui qui dit pas Modopops, y prend un ban",
+		"04" => "Chut faut pas l'dire",
+		"05" => "Euh sans spammer si possible",
+		"06" => "Fin ça dépend d'eux en fait",
+		"07" => "*Générique de Transfo*",
+		"08" => "J'attends",
+		"09" => "Juste pour te prouver que t'as tord",
+		"10" => "Nan c'est pas un club d'alcoolique anonyme",
+		"11" => "On s'en s'rait passé d'ça tu vois ?",
+		"12" => "Ouais on les a kidnappé mais on leur fera pas d'mal",
+		"13" => "'Pops est virée",
+		"14" => "*Rire de modérateur*"
+	];
+
+	$killerlux =
+	[
+		"01" => "C'est quoi ça ? Jamais entendu parler...",
+		"02" => "Mais ça on l'savait déjà",
+		"03" => "Moi c'est Killerlux",
+		"04" => "Pardon ?!",
+		"05" => "Si ça c'est pas la classe."
+	];
+
 	$liste =
 	[
 		"tigrounette" => $tigrounette,
 		"melibellule" => $melibellule,
 		"sydoline" => $sydoline,
 		"narayan" => $narayan,
-		
+		"pikashu" => $pikashu,
+		"modopops" => $modopops,
+		"cryquinette" => $cryquinette,
+		"aewing" => $aewing,
+		"killerlux" => $killerlux
 	];
 
 	require_once 'views/soundboard/soundboard.php';

@@ -1,0 +1,17 @@
+.list-inline {
+	display: flex;
+	display: -webkit-flex;
+	margin-top: 10px;
+}
+
+.list-inline li {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+}
+
+.list-inline li a {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

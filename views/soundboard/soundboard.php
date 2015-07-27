@@ -47,7 +47,7 @@
 							$i = 0;
 							foreach ($array as $id => $node)
 							{
-								echo "<li><a role='button' class='btn btn-sm btn-primary btn-block' data-sound='" . $id . "'>" . $node . "</a></li>";
+								echo "<li><a role='button' class='btn btn-sm btn-primary btn-block' onclick='" . $name , $id . ".play()'>" . $node . "</a></li>";
 								if (++$i % 3 == 0)
 								{
 									echo "</ul><ul class='list-inline text-center'>";
@@ -62,22 +62,6 @@
 		</div>
 	</div>
 </div>
-<style type="text/css">
-	.list-inline {
-		display: flex;
-		display: -webkit-flex;
-		margin-top: 10px;
-	}
-
-	.list-inline li {
-		-webkit-flex: 1;
-		-ms-flex: 1;
-		flex: 1;
-	}
-
-	.list-inline li a {
-		overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-	}
-</style>
+<link rel="stylesheet" type="text/css" href="ressources/css/soundboard.css" />
+<script type="text/javascript" src="ressources/js/soundmanager2.js"></script>
+<script type="text/javascript" src="ressources/js/soundboard.js"></script>
