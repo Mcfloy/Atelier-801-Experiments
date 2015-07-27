@@ -8,9 +8,14 @@
 			<div class="tab-pane fade active in" id="tigrounette">
 				<ul class="list-inline text-center">
 					<?php
+						$i = 0;
 						foreach ($tigrounette as $node)
 						{
-							echo "<li><button class='btn btn-primary btn-block' onclick='tigrounette" . $node[0] . "'>" . $node[1] . "</button></li>";
+							echo "<li><a role='button' class='btn btn-xs btn-primary btn-block' data-sound='" . $node[0] . "'>" . $node[1] . "</a></li>";
+							if (++$i % 3 == 0)
+							{
+								echo "</ul><ul class='list-inline text-center'>";
+							}
 						}
 					?>
 				</ul>
@@ -18,3 +23,22 @@
 		</div>
 	</div>
 </div>
+<style type="text/css">
+	.list-inline {
+		display: flex;
+		display: -webkit-flex;
+		margin-top: 10px;
+	}
+
+	.list-inline li {
+		-webkit-flex: 1;
+		-ms-flex: 1;
+		flex: 1;
+	}
+
+	.list-inline li a {
+		overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+	}
+</style>

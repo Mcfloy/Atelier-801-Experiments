@@ -48,8 +48,8 @@
 								
 								<li><a href="#">Modules Lua</a></li>
 								<li><a href="#">Modules 801</a></li>
-								<li><a href="#">Soundboard</a></li>
-								<li><a href="/Atelier%20801%20Experiments/soundboard">Standalone</a>
+								<li><a href="/Atelier%20801%20Experiments/soundboard">Soundboard</a></li>
+								<li><a href="https://github.com/Mcfloy/Atelier-801-Standalone/releases" target="_blank">Standalone</a>
 							</ul>
 						</li>
 						<li class="dropdown">

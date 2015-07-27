@@ -20,7 +20,29 @@
 		["15", "C'est secret"],
 		["16", "C'est top secret"],
 		["17", "Désolé."],
-		["18", "Et après j'ai laissé tomber"]
+		["18", "Et après j'ai laissé tomber"],
+		["19", "Et le PHP c'est d'la merde"],
+		["20", "Euh.. bah faut changer d'PC"],
+		["21", "Euh bah oui mais c'est fait exprès"],
+		["22", "Euh... Ch'ais pas."],
+		["23", "Euh... nan."],
+		["24", "Euh... où ça ?"],
+		["25", "Euh... ouais."],
+		["26", "'Fin on a quand même prévu, mais c'est dans un avenir assez lointain"],
+		["27", "J'ai spoilé quoi ?"],
+		["28", "Jamais..."],
+		["29", "J'crois qu'y passe le week-end dehors là,Pikashu."],
+		["30", "J'me suis même pas habillé aujourd'hui."],
+		["31", "J'trouve ça pas bête comme idée"],
+		["32", "Kikoo Pwet"],
+		["33", "La voix des chats ninjas ?"],
+		["34", "L'AJAX c'est d'la merde..."],
+		["35", "Le quoi ?"],
+		["36", "Les options c'est mal !"],
+		["37", "Loukno c'est une marketeuse"],
+		["38", "Mais c'est pas dit méchamment hein..."],
+		["39", "Mais euh..."],
+		["40", "Mais Linux c'est tout pourri t'façon"]
 	];
 
 	require_once 'views/soundboard/soundboard.php';
