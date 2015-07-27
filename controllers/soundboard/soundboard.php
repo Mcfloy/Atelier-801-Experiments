@@ -120,6 +120,22 @@
 		"04" => "Tartiflette, alors c'est parfait"
 	];
 
+	$modopops =
+	[
+		"01" => "D'accord",
+		"02" => "En fait t'as donné une information que on était pas censé savoir",
+		"03" => "J'imagine déjà tous les modos qui s'prendront des claques",
+		"04" => "À vous la parole",
+		"05" => "Alors Mcfloy a une très bonne question...",
+		"06" => "Bah j'attaque ?",
+		"07" => "Et je suis une abeille",
+		"08" => "Euh voilà j'ai donc coupé le tchat",
+		"09" => "Merci",
+		"10" => "On l'applaudit hein",
+		"11" => "On vous réserve plusieurs petites surprises",
+		"12" => "Tout ce temps pour écrire ça !"
+	];
+
 	$liste =
 	[
 		"tigrounette" => $tigrounette,
