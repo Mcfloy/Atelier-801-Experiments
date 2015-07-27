@@ -1,3 +1,9 @@
+<ul class="breadcrumb">
+	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li>Leaderboard</li>
+	<li class="active"><?php echo $game; ?></li>
+</ul>
+
 <div class="row">
 	<div class="col-lg-12">
 		<div class="panel panel-primary">

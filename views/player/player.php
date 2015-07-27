@@ -3,6 +3,12 @@
 		vertical-align: middle !important;
 	}
 </style>
+<ul class="breadcrumb">
+	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><a href="#">Joueur</a></li>
+	<li class="active">Mcfloy</li>
+</ul>
+
 <div class="row">
 	<div class="col-lg-3">
 		<div class="panel panel-primary">
