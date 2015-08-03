@@ -74,14 +74,26 @@
 		"69" => "*Une journée chez Atelier 801*",
 		"70" => "Y'a beaucoup d'bordel",
 		"71" => "Y'a pas d'bug sur Transformice !",
-		"72" => "Bah c'est un peu des kikoos et des pyjamas..."
+		"72" => "Bah c'est un peu des kikoos et des pyjamas...",
+		"73" => "Allo ?",
+		"74" => "Est-ce qu'on m'entend ?",
+		"75" => "BONJOUR !",
+		"76" => "Non je ne suis pas une fille",
+		"77" => "Bah j'vais déjà répondre à ceux qui floodent le chat",
+		"78" => "On a pas eu l'temps de le faire",
+		"79" => "Ça coûtera des fraises... Beaucoup de fraises",
+		"80" => "Le prochain event, y va être cool !",
+		"81" => "Ça va être cool",
+		"82" => "On a trouvé une idée originale",
+		"83" => "Euh... C'est quoi l'mulodrome ?"
 	];
 
 	$melibellule =
 	[
 		"01" => "*Poulet*",
 		"02" => "Jusque là Jean-Baptiste est venu me chercher",
-		"03" => "Mais les graphismes étaient pas au top"
+		"03" => "Mais les graphismes étaient pas au top",
+		"04" => "Ouaaaaaaiiiiiis !"
 	];
 
 	$sydoline =

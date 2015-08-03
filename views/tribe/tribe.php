@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
 	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
 	<li><a href="#">Tribu</a></li>
-	<li class="active">Jeuxvidéo.com</li>
+	<li class="active">Les Populaires</li>
 </ul>
 
 <div class="row">
@@ -14,11 +14,11 @@
 						<tbody>
 							<tr>
 								<td colspan="2">
-									<img src="http://logostribu.atelier801.com/5536/5536.jpg"/>
+									<img src="http://logostribu.atelier801.com/2530/12530.jpg" height="100" width="100"/>
 								</td>
 							</tr>
 							<tr>
-								<td>Tribu</td><td>Jeuxvidéo.com</td>
+								<td>Tribu</td><td>Les Populaires</td>
 							</tr>
 							<tr>
 								<td>Date de création</td><td>13/09/2013</td>
@@ -31,7 +31,7 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<a class="btn btn-link btn-xs" href="http://atelier801.com/tribe-forum?tr=5536" target="_blank">Forum de la tribu</a>
+									<a class="btn btn-link btn-xs" href="http://atelier801.com/tribe-forum?tr=12530" target="_blank">Forum de la tribu</a>
 								</td>
 							</tr>
 						</tbody>
@@ -46,16 +46,11 @@
 							<tr>
 								<td colspan="2">
 									<ul>
-										<li>Bortoprograme</li>
-										<li>Carrrasss</li>
-										<li>Fezpanda</li>
-										<li>Fezpandaii</li>
-										<li>Lucaspe</li>
-										<li>Mcfloy</li>
-										<li>Mewcatwo</li>
-										<li>Mrigrec</li>
-										<li>Raspberrypii</li>
-										<li>XXgemeurpgm</li>
+										<li>Ackers</li>
+										<li>Afadass</li>
+										<li>Allyq</li>
+										<li>Ananomoly</li>
+										<li>Andmilk</li>
 									</ul>
 								</td>
 							</tr>
@@ -70,7 +65,10 @@
 							</tr>
 							<tr>
 								<td colspan="2">
-									<p><strong>Bienvenue chez Jeuxvidéo.com !</strong></p>
+									<p><strong>*fart noises*<br><br>
+									n_n<br>
+									|. . |______<br>
+									|_/',, ,,</strong></p>
 								</td>
 							</tr>
 						</tbody>

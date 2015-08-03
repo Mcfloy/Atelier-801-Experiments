@@ -20,9 +20,6 @@
 							<td>Joueur</td><td>Mcfloy</td>
 						</tr>
 						<tr>
-							<td>Tribu</td><td><a class="btn btn-link btn-xs" href="/Atelier%20801%20Experiments/tribe/5536/">Jeuxvidéo.com</a></td>
-						</tr>
-						<tr>
 							<td>Messages</td><td>1 760</td>
 						</tr>
 						<tr>
@@ -171,7 +168,7 @@
 								<td colspan="2">
 									<ul class="list-inline">
 										<?php
-											for ($i=0; $i < 20; $i++) { 
+											for ($i=0; $i < 127; $i++) { 
 												echo "<li><img src='http://transformice.com/images/x_transformice/x_badges/x_" . $i . ".png'/></li>";
 											}
 										?>

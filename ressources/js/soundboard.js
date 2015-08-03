@@ -435,6 +435,72 @@ soundManager.onload = function(){
 			url : "ressources/sound/tigrounette/72.mp3"
 		});
 
+	tigrounette73 = soundManager.createSound(
+		{
+			id : "tigrounette73",
+			url : "ressources/sound/tigrounette/73.mp3"
+		});
+
+	tigrounette74 = soundManager.createSound(
+		{
+			id : "tigrounette74",
+			url : "ressources/sound/tigrounette/74.mp3"
+		});
+
+	tigrounette75 = soundManager.createSound(
+		{
+			id : "tigrounette75",
+			url : "ressources/sound/tigrounette/75.mp3"
+		});
+
+	tigrounette76 = soundManager.createSound(
+		{
+			id : "tigrounette76",
+			url : "ressources/sound/tigrounette/76.mp3"
+		});
+
+	tigrounette77 = soundManager.createSound(
+		{
+			id : "tigrounette77",
+			url : "ressources/sound/tigrounette/77.mp3"
+		});
+
+	tigrounette78 = soundManager.createSound(
+		{
+			id : "tigrounette78",
+			url : "ressources/sound/tigrounette/78.mp3"
+		});
+
+	tigrounette79 = soundManager.createSound(
+		{
+			id : "tigrounette79",
+			url : "ressources/sound/tigrounette/79.mp3"
+		});
+
+	tigrounette80 = soundManager.createSound(
+		{
+			id : "tigrounette80",
+			url : "ressources/sound/tigrounette/80.mp3"
+		});
+
+	tigrounette81 = soundManager.createSound(
+		{
+			id : "tigrounette81",
+			url : "ressources/sound/tigrounette/81.mp3"
+		});
+
+	tigrounette82 = soundManager.createSound(
+		{
+			id : "tigrounette82",
+			url : "ressources/sound/tigrounette/82.mp3"
+		});
+
+	tigrounette83 = soundManager.createSound(
+		{
+			id : "tigrounette83",
+			url : "ressources/sound/tigrounette/83.mp3"
+		});
+
 	// Tous les sons de melibellule
 	melibellule01 = soundManager.createSound(
 		{
@@ -452,6 +518,12 @@ soundManager.onload = function(){
 		{
 			id : "melibellule03",
 			url : "ressources/sound/melibellule/03.mp3"
+		});
+
+	melibellule04 = soundManager.createSound(
+		{
+			id : "melibellule04",
+			url : "ressources/sound/melibellule/04.mp3"
 		});
 
 	// Tous les sons de Sydoline
