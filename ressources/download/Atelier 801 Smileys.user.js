@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Atelier 801 Smileys
 // @namespace    https://github.com/Mcfloy/Atelier-801-Experiments
-// @version      0.3
+// @version      0.4
 // @description  Great Smileys in Atelier 801 (Credits to Fxie & Melibellule)
 // @author       Mcfloy
 // @match        http://atelier801.com/*
@@ -9,20 +9,21 @@
 // ==/UserScript==
 
 (function() {
-		if (document.querySelector("#outils_message_reponse") !== null || document.querySelector("#outils_message_reponse") !== undefined) {
+		if (document.querySelector("#outils_message_reponse") !== null && document.querySelector("#outils_message_reponse") !== undefined) {
 			var parent = document.querySelector("#outils_message_reponse > .btn-group:nth-last-child(2)");
 			var bloc = "message_reponse";
 		}
-		else if (document.querySelector("#outils_message_sujet") !== null || document.querySelector("#outils_message_sujet") !== undefined) {
+		else if (document.querySelector("#outils_message_sujet") !== null && document.querySelector("#outils_message_sujet") !== undefined) {
 			var parent = document.querySelector("#outils_message_sujet > .btn-group:nth-last-child(2)");
 			var bloc = "message_sujet";
 		}
-		else if (document.querySelector("#outils_message_conversation") !== null || document.querySelector("#outils_message_conversation") !== undefined) {
+		else if (document.querySelector("#outils_message_conversation") !== null && document.querySelector("#outils_message_conversation") !== undefined) {
 			var parent = document.querySelector("#outils_message_conversation > .btn-group:nth-last-child(2)");
 			var bloc = "message_conversation";
 		}
-		else if (document.querySelector("#outils_presentation") !== null || document.querySelector("#outils_presentation") !== undefined) {
-			var parent = document.querySelector("#outils_message_presentation > .btn-group:nth-last-child(2)");
+		else if (document.querySelector("#outils_presentation") !== null && document.querySelector("#outils_presentation") !== undefined) {
+			
+			var parent = document.querySelector("#outils_presentation > .btn-group:nth-last-child(2)");
 			var bloc = "presentation";
 		}
 		if (parent !== undefined && parent !== null) {
