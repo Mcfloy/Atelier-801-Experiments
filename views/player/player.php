@@ -1,86 +1,111 @@
 <ul class="breadcrumb">
 	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
-	<li><a href="#">Joueur</a></li>
-	<li class="active">Mcfloy</li>
+	<li class="active">Profil de <?php echo $player->getPseudo(); ?></li>
 </ul>
 
 <div class="row">
-	<div class="col-lg-3">
-		<div class="panel panel-primary">
-			<div class="panel-heading">Données du forum</div>
-			<div class="panel-body">
-				<table class="table table-striped text-center">
-					<tbody>
-						<tr>
-							<td colspan="2">
-								<img src="http://avatars.atelier801.com/9429/3609429.jpg"/>
-							</td>
-						</tr>
-						<tr>
-							<td>Joueur</td><td>Mcfloy</td>
-						</tr>
-						<tr>
-							<td>Messages</td><td>1 760</td>
-						</tr>
-						<tr>
-							<td>Genre</td><td>Masculin</td>
-						</tr>
-						<tr>
-							<td>Date d'inscription</td><td>29/05/2011</td>
-						</tr>
-						<tr>
-							<td>Date de naissance</td><td>08/10/1996</td>
-						</tr>
-					</tbody>
-				</table>
+	<div class="col-lg-3 col-md-3">
+		<div class="row-fluid">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Données du forum</div>
+				<div class="panel-body">
+					<table class="table table-striped text-center">
+						<tbody>
+							<tr>
+								<td colspan="2">
+									<img src="<?php echo $player->getAvatarURL(); ?>"/>
+								</td>
+							</tr>
+							<tr>
+								<td>Joueur</td><td><?php echo $player->getPseudo(); ?></td>
+							</tr>
+							<tr>
+								<td>Messages</td><td><?php echo $player->getMessages(); ?></td>
+							</tr>
+							<tr>
+								<td>Genre</td><td>Masculin</td>
+							</tr>
+							<tr>
+								<td>Date d'inscription</td><td><?php echo $player->getRegisterDate(); ?></td>
+							</tr>
+							<tr>
+								<td>Date de naissance</td><td><?php echo $player->getBirthdayDate(); ?></td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+			</div>
+			<div class="panel panel-primary">
+				<div class="panel-heading">Données du fansite</div>
+				<div class="panel-body">
+					<table class="table table-striped text-center">
+						<tbody>
+							<tr>
+								<td>Script Lua proposé(s)</td><td>1</td>
+							</tr>
+							<tr>
+								<td>Questions résolues</td><td>160</td>
+							</tr>
+							<tr>
+								<td>Commentaires</td><td>321</td>
+							</tr>
+							<tr>
+								<td>Date d'inscription</td><td>29/05/2011</td>
+							</tr>
+							<tr>
+								<td>Dernière connexion</td><td>08/08/2015</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-9">
+	<div class="col-lg-9 col-md-9">
 		<div class="panel panel-primary">
-			<div class="panel-heading">Données de Transformice</div>
+			<div class="panel-heading clearfix">Données de Transformice <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<table class="table table-striped">
 						<tbody>
 							<tr>
 								<td colspan="2"><strong>Informations</strong></td>
 							</tr>
 							<tr>
-								<td>Niveau</td><td>55</td>
+								<td>Niveau</td><td><?php echo $player->getLevel(); ?></td>
 							</tr>
 							<tr>
-								<td>Titre en cours</td><td>&laquo;Souris Actrice&raquo;</td>
+								<td>Titre en cours</td><td><?php echo $player->getCurrentTitle(); ?></td>
 							</tr>
 							<tr>
 								<td colspan="2"><strong>Chamane</strong></td>
 							</tr>
 							<tr>
-								<td>Souris sauvées (normal)</td><td>24 100</td>
+								<td>Souris sauvées (normal)</td><td><?php echo $player->getTFMNormalSaves(); ?></td>
 							</tr>
 							<tr>
-								<td>Souris sauvées (difficile)</td><td>7 062</td>
+								<td>Souris sauvées (difficile)</td><td><?php echo $player->getTFMHardSaves(); ?></td>
 							</tr>
 							<tr>
-								<td>Souris sauvées (divin)</td><td>0</td>
+								<td>Souris sauvées (divin)</td><td><?php echo $player->getTFMDivineSaves(); ?></td>
 							</tr>
 							<tr>
-								<td>Fromages récupérés</td><td>754</td>
+								<td>Fromages récupérés</td><td><?php echo $player->getTFMShamanCheeses(); ?></td>
 							</tr>
 							<tr>
 								<td colspan="2"><strong>Souris</strong></td>
 							</tr>
 							<tr>
-								<td>Firsts</td><td>2 168</td>
+								<td>Firsts</td><td><?php echo $player->getTFMFirsts(); ?></td>
 							</tr>
 							<tr>
-								<td>Fromages récupérés</td><td>22 322</td>
+								<td>Fromages récupérés</td><td><?php echo $player->getTFMCHeeses(); ?></td>
 							</tr>
 							<tr>
-								<td>Bootcamp</td><td>3</td>
+								<td>Bootcamp</td><td><?php echo $player->getTFMBootcamp(); ?></td>
 							</tr>
 							<tr>
-								<td>Parties jouées</td><td>51 340</td>
+								<td>Parties jouées</td><td><?php echo $player->getTFMRounds(); ?></td>
 							</tr>
 							<tr>
 								<td colspan="2"><strong>Titres débloqués (123 au total)</strong></td>
@@ -158,7 +183,7 @@
 						</tbody>
 					</table>
 				</div>
-				<div class="col-lg-6">
+				<div class="col-lg-6 col-md-6">
 					<table class="table table-striped">
 						<tbody>
 							<tr>
@@ -168,8 +193,22 @@
 								<td colspan="2">
 									<ul class="list-inline">
 										<?php
-											for ($i=0; $i < 127; $i++) { 
-												echo "<li><img src='http://transformice.com/images/x_transformice/x_badges/x_" . $i . ".png'/></li>";
+											foreach ($player->getTFMBadges() as $badge) {
+												echo "<li><img src='http://transformice.com/images/x_transformice/x_badges/x_" . $badge . ".png'/></li>";
+											}
+										?>
+									</ul>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2"><strong>Inventaire</strong></td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<ul class="list-inline" id="inventory">
+										<?php
+											foreach ($player->getTFMInventory() as $item) {
+												echo "<li><img src='http://transformice.com/images/x_transformice/x_inventaire/" . $item[0] . ".jpg'/><span>" . $item[1] . "</span></li>";
 											}
 										?>
 									</ul>
@@ -179,31 +218,79 @@
 								<td colspan="2"><strong>Racing</strong></td>
 							</tr>
 							<tr>
-								<td>Firsts</td><td>0</td>
+								<td>Firsts</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMRacingFirsts() >= 10000) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (10000 - $player->getTFMRacingFirsts()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMRacingFirsts(); ?>
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<td>Podiums</td><td>0</td>
+								<td>Podiums</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMRacingPodiums() >= 10000) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (10000 - $player->getTFMRacingPodiums()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMRacingPodiums();?>
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<td>Parties finies</td><td>0</td>
+								<td>Parties finies</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMRacingFinished() >= 10000) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (10000 - $player->getTFMRacingFinished()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMRacingFinished();?>
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<td>Parties jouées</td><td>0</td>
+								<td>Parties jouées</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMRacingPlayed() >= 1500) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (1500 - $player->getTFMRacingPlayed()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMRacingPlayed();?>
+									</span>
+								</td>
 							</tr>						
 							<tr>
 								<td colspan="2"><strong>Survivor</strong></td>
 							</tr>
 							<tr>
-								<td>Parties survécues</td><td>0</td>
+								<td>Parties survécues</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMSurvivorSurvived() >= 10000) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (10000 - $player->getTFMSurvivorSurvived()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMSurvivorSurvived(); ?>
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<td>Parties jouées</td><td>1</td>
+								<td>Parties jouées</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMSurvivorPlayed() >= 1000) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (1000 - $player->getTFMSurvivorPlayed()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMSurvivorPlayed(); ?>
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<td>Souris tuées</td><td>0</td>
+								<td>Souris tuées</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMSurvivorKilled() >= 20000) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (20000 - $player->getTFMSurvivorKilled()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMSurvivorKilled(); ?>
+									</span>
+								</td>
 							</tr>
 							<tr>
-								<td>Nombre de fois chamane</td><td>0</td>
+								<td>Nombre de fois chamane</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo ($player->getTFMSurvivorShaman() >= 800) ? ('Vous avez obtenu le badge !') : ('Il en reste ' . (800 - $player->getTFMSurvivorShaman()) . ' pour débloquer le badge.');?>">
+										<?php echo $player->getTFMSurvivorShaman(); ?>
+									</span>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -213,84 +300,84 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-lg-4">
+	<div class="col-lg-4 col-md-4">
 		<div class="panel panel-primary">
-			<div class="panel-heading">Données de Bouboum</div>
+			<div class="panel-heading clearfix">Données de Bouboum <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
 				<table class="table table-striped">
 					<tbody>
 						<tr>
-							<td>Niveau partie classée</td><td>1 250</td>
+							<td>Niveau partie classée</td><td><?php echo $player->getBouboumRank(); ?></td>
 						</tr>
 						<tr>
-							<td>Nombre de parties jouées</td><td>86</td>
+							<td>Nombre de parties jouées</td><td><?php echo $player->getBouboumPlayed(); ?></td>
 						</tr>
 						<tr>
-							<td>Joueurs tués / morts</td><td>86 / 71 - 1.21</td>
+							<td>Joueurs tués / morts</td><td><?php echo $player->getBouboumKilled() . " / " . $player->getBouboumDead() . " - " . number_format($player->getBouboumKilled() / $player->getBouboumDead(), 2, ".", " "); ?></td>
 						</tr>
 						<tr>
-							<td>Parties gagnées</td><td>0</td>
+							<td>Parties gagnées</td><td><?php echo $player->getBouboumRoundsWon(); ?></td>
 						</tr>
 						<tr>
-							<td>Tours gagnés</td><td>5</td>
+							<td>Tours gagnés</td><td><?php echo $player->getBouboumLapsWon(); ?></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4">
+	<div class="col-lg-4 col-md-4">
 		<div class="panel panel-primary">
-			<div class="panel-heading">Données de Fortoresse</div>
+			<div class="panel-heading clearfix">Données de Fortoresse <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
 				<table class="table table-striped">
 					<tbody>
 						<tr>
-							<td>Parties jouées</td><td>8</td>
+							<td>Parties jouées</td><td><?php echo $player->getFortoPlayed();?></td>
 						</tr>
 						<tr>
-							<td>Parties gagnées</td><td>5</td>
+							<td>Parties gagnées</td><td><?php echo $player->getFortoWon();?></td>
 						</tr>
 						<tr>
-							<td>Joueurs tués</td><td>6</td>
+							<td>Joueurs tués</td><td><?php echo $player->getFortoKilled();?></td>
 						</tr>
 						<tr>
-							<td>Morts</td><td>3</td>
+							<td>Morts</td><td><?php echo $player->getFortoDead();?></td>
 						</tr>
 						<tr>
-							<td>Zones capturées</td><td>0</td>
+							<td>Zones capturées</td><td><?php echo $player->getFortoCaptured();?></td>
 						</tr>
 						<tr>
-							<td>VIP assassinés</td><td>0</td>
+							<td>VIP assassinés</td><td><?php echo $player->getFortoAssassinated();?></td>
 						</tr>
 						<tr>
-							<td>Points de vie soignés</td><td>0</td>
+							<td>Points de vie soignés</td><td><?php echo $player->getFortoHealed();?></td>
 						</tr>
 						<tr>
-							<td>Dégâts explosifs infligés</td><td>0</td>
+							<td>Dégâts explosifs infligés</td><td><?php echo $player->getFortoDamages();?></td>
 						</tr>
 					</tbody>
 				</table>
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4">
+	<div class="col-lg-4 col-md-4">
 		<div class="panel panel-primary">
-			<div class="panel-heading">Données de Nekodancer</div>
+			<div class="panel-heading clearfix">Données de Nekodancer <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
 				<table class="table table-striped">
 					<tbody>
 						<tr>
-							<td>Parties jouées</td><td>91</td>
+							<td>Parties jouées</td><td><?php echo $player->getNekoPlayed(); ?></td>
 						</tr>
 						<tr>
-							<td>Parties finies</td><td>74</td>
+							<td>Parties finies</td><td><?php echo $player->getNekoFinished(); ?></td>
 						</tr>
 						<tr>
-							<td>Parties finies (+98%)</td><td>0</td>
+							<td>Parties finies (+98%)</td><td><?php echo $player->getNekoFinished98(); ?></td>
 						</tr>
 						<tr>
-							<td>Podium</td><td>10</td>
+							<td>Podium</td><td><?php echo $player->getNekoPodiums(); ?></td>
 						</tr>
 					</tbody>
 				</table>
@@ -298,4 +385,9 @@
 		</div>
 	</div>
 </div>
-<link rel="stylesheet" type="text/css" href="ressources/css/player.css" />
+<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/ressources/css/player.css" />
+<script type="text/javascript">
+	$(function () {
+		$("[data-toggle='tooltip']").tooltip();
+	});
+</script>

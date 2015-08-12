@@ -16,7 +16,7 @@ $(document).ready(function() {
 				$("#button-connexion").removeClass("btn-primary").addClass("btn-warning");
 				$.ajax({
 					type: "POST",
-					url: "controllers/global/connexion.php",
+					url: "/Atelier%20801%20Experiments/controllers/global/connexion.php",
 					data: {
 						login: login.val(),
 						password: password.val()
@@ -54,6 +54,9 @@ $(document).ready(function() {
 										+'<div class="col-lg-6 col-lg-offset-3">'
 										+'	<div class="form-group">'
 										+'		<input type="email" id="input-email" class="form-control" placeholder="Email" required/>'
+										+'	</div>'
+										+'	<div class="form-group">'
+										+'		<label for="rules"><input type="checkbox" name="rules" required/> Ce même mot de passe est <strong class="text-danger">différent</strong> de mon compte Atelier 801.</label>'
 										+'	</div>'
 										+'</div>'
 										+'</div>');

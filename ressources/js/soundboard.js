@@ -1,5 +1,5 @@
 soundManager.url = 'ressources/swf/';
-soundManager.debugMode = true;
+soundManager.debugMode = false;
 soundManager.onload = function(){
 
 	// Tous les sons de Tigrounette

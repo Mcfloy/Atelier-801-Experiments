@@ -45,11 +45,11 @@ $(document).ready(function() {
 		}
 		else if (player.length > 0)
 		{
-			location.href = "/Atelier%20801%20Experiments/player/" + encodeURIComponent(player) + "/";
+			location.href = "/Atelier%20801%20Experiments/search/p/" + encodeURIComponent(player) + "/";
 		}
 		else if (tribe.length > 0)
 		{
-			location.href = "/Atelier%20801%20Experiments/tribe/" + 5536 + "/"; 
+			location.href = "/Atelier%20801%20Experiments/search/t/" + encodeURIComponent(tribe) + "/"; 
 		}
 		$("#formConnexion button").removeClass("btn-warning").addClass("btn-primary");
 	});

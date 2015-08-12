@@ -82,7 +82,7 @@
 			 			<li class="dropdown">
 			 				<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Classement <span class="caret"></span></a>
 			 				<ul class="dropdown-menu" role="menu">
-			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/">Atelier 801</a></li>
+			 					<li><a href="#">Atelier 801</a></li>
 			 					<li class="divider"></li>
 			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Transformice/">Transformice</a></li>
 			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Bouboum/">Bouboum</a></li>
@@ -93,14 +93,15 @@
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Experiments <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="#">Modules Lua</a></li>
+								<li><a href="/Atelier%20801%20Experiments/lua">Modules Lua</a></li>
 								<li><a href="#">Modules 801</a></li>
 								<li><a href="/Atelier%20801%20Experiments/soundboard">Soundboard</a></li>
-								<li><a href="https://github.com/Mcfloy/Atelier-801-Standalone/releases" target="_blank">Standalone</a>
+								<li><a href="https://github.com/Mcfloy/Atelier-801-Standalone/releases" target="_blank">Standalone</a></li>
+								<li><a href="/Atelier%20801%20Experiments/smileys">Atelier 801 Smileys</a></li>
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Chercher <span class="caret"></span></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Rechercher <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<form class="navbar-form" role="search" id="formSearch">
 									<li>
@@ -133,7 +134,8 @@
 								<li class="dropdown">
 									<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><?php echo $_SESSION['member']->getLogin(); ?> <span class="caret"></span></a>
 									<ul class="dropdown-menu" role="menu">
-										<li><a href="#" id="deconnexion"><span class="fa fa-sign-out"></span> Déconnexion</a></li>
+										<li><a href="/Atelier%20801%20Experiments/player/<?php echo $_SESSION['member']->getLogin();?>/"><i class="fa fa-user"></i> Mon profil</a></li>
+										<li><a href="#" id="deconnexion"><i class="fa fa-sign-out"></i> Déconnexion</a></li>
 									</ul>
 								</li>
 								<?php

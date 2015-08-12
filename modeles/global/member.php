@@ -14,6 +14,7 @@
 				'pseudo' => $login
 			));
 			$fetch = $req->fetch();
+			$req->closeCursor();
 
 			if ($fetch != false)
 			{

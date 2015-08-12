@@ -1,3 +1,23 @@
 table tbody tr td {
 	vertical-align: middle !important;
 }
+
+#inventory li {
+	position: relative;
+}
+
+#inventory li span {
+	position: absolute;
+	bottom: -1px;
+	right: 7px;
+	font-size: 10px;
+	font-family: 'Arial', sans-serif;
+	font-weight: lighter;
+	color: #fff;
+}
+
+.tooltip-span
+{
+	font-weight: bold;
+	cursor: pointer;
+}
