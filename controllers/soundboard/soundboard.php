@@ -85,7 +85,8 @@
 		"80" => "Le prochain event, y va être cool !",
 		"81" => "Ça va être cool",
 		"82" => "On a trouvé une idée originale",
-		"83" => "Euh... C'est quoi l'mulodrome ?"
+		"83" => "Euh... C'est quoi l'mulodrome ?",
+		"84" => "Moi au début j'prononçais Transformiss aussi..."
 	];
 
 	$melibellule =
@@ -93,7 +94,8 @@
 		"01" => "*Poulet*",
 		"02" => "Jusque là Jean-Baptiste est venu me chercher",
 		"03" => "Mais les graphismes étaient pas au top",
-		"04" => "Ouaaaaaaiiiiiis !"
+		"04" => "Ouaaaaaaiiiiiis !",
+		"05" => "Alors déjà c'est Transformice, c'est pas Transformiss"
 	];
 
 	$sydoline =

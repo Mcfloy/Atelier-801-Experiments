@@ -6,16 +6,16 @@
 <html>
 <head>
 	<title>Atelier 801 Experiments</title>
-	<script type="text/javascript" src="/Atelier%20801%20Experiments/ressources/js/jquery.min.js"></script>
-	<script type="text/javascript" src="/Atelier%20801%20Experiments/ressources/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="/Atelier%20801%20Experiments/ressources/js/global/search.js"></script>
-	<script type="text/javascript" src="/Atelier%20801%20Experiments/ressources/js/global/connexion.js"></script>
-	<script type="text/javascript" src="/Atelier%20801%20Experiments/ressources/js/global/deconnexion.js"></script>
+	<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/global/search.js"></script>
+	<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/global/connexion.js"></script>
+	<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/global/deconnexion.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans" />
-	<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/ressources/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/ressources/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/ressources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/style.css">
 	<link rel="shortcut icon" href="favicon.ico?v=2" />
 </head>
 <body>
@@ -62,7 +62,7 @@
 			}
 		?>
 		<div id="header" class="row text-center">
-			<object data="/Atelier%20801%20Experiments/ressources/img/logo/logo_dark.svg" type="image/svg+xml" height="100"></object>
+			<object data="/Atelier%20801%20Experiments/resources/img/logo/logo_dark.svg" type="image/svg+xml" height="100"></object>
 			<h1><a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></h1>
 			<h4>We make science, not favoritism</h4>
 		</div>
@@ -84,18 +84,20 @@
 			 				<ul class="dropdown-menu" role="menu">
 			 					<li><a href="#">Atelier 801</a></li>
 			 					<li class="divider"></li>
-			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Transformice/">Transformice</a></li>
-			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Bouboum/">Bouboum</a></li>
-			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Fortoresse/">Fortoresse</a></li>
-			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Nekodancer/">Nekodancer</a></li>
+			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Transformice">Transformice</a></li>
+			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Bouboum">Bouboum</a></li>
+			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Fortoresse">Fortoresse</a></li>
+			 					<li><a href="/Atelier%20801%20Experiments/leaderboard/Nekodancer">Nekodancer</a></li>
 			 				</ul>
 			 			</li>
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Experiments <span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
-								<li><a href="/Atelier%20801%20Experiments/lua">Modules Lua</a></li>
+								<li><a href="/Atelier%20801%20Experiments/editor">Editeur de code</a></li>
+								<li><a href="/Atelier%20801%20Experiments/modules-lua">Modules Lua</a></li>
 								<li><a href="#">Modules 801</a></li>
 								<li><a href="/Atelier%20801%20Experiments/soundboard">Soundboard</a></li>
+								<li><a href="/Atelier%20801%20Experiments/online">Qui est en ligne ?</a></li>
 								<li><a href="https://github.com/Mcfloy/Atelier-801-Standalone/releases" target="_blank">Standalone</a></li>
 								<li><a href="/Atelier%20801%20Experiments/smileys">Atelier 801 Smileys</a></li>
 							</ul>

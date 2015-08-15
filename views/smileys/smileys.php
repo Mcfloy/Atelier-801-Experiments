@@ -27,7 +27,7 @@
 					<li><a class="btn btn-xs btn-link" href="#">Violent monkey</a> pour Opera.</li>
 				</ul>
 
-				<a class="btn btn-xs btn-link" href="https://github.com/Mcfloy/Atelier-801-Experiments/raw/master/ressources/download/Atelier%20801%20Smileys.user.js">Télécharger le script</a> (Version 0.5)
+				<a class="btn btn-xs btn-link" href="https://github.com/Mcfloy/Atelier-801-Experiments/raw/master/resources/download/Atelier%20801%20Smileys.user.js">Télécharger le script</a> (Version 0.5)
 			</div>
 		</div>
 	</div>

@@ -62,6 +62,6 @@
 		</div>
 	</div>
 </div>
-<link rel="stylesheet" type="text/css" href="ressources/css/soundboard.css" />
-<script type="text/javascript" src="ressources/js/soundmanager2.js"></script>
-<script type="text/javascript" src="ressources/js/soundboard.js"></script>
+<link rel="stylesheet" type="text/css" href="resources/css/soundboard.css" />
+<script type="text/javascript" src="resources/js/soundmanager2.js"></script>
+<script type="text/javascript" src="resources/js/soundboard.js"></script>

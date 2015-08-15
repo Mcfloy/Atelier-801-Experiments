@@ -8,7 +8,7 @@
 		require_once __DIR__ . '/controllers/index/index.php';
 	});
 
-	$router->map('GET', 'leaderboard/[a:game]/', function($game) {
+	$router->map('GET', 'leaderboard/[a:game]', function($game) {
 		require_once __DIR__ . '/controllers/leaderboard/leaderboard.php';
 	});
 
@@ -32,6 +32,14 @@
 		require_once __DIR__ . '/controllers/tribe/tribe.php';
 	});
 
+	$router->map('GET', 'online/[a:name]', function($name) {
+		require_once __DIR__ . '/controllers/online/online.php';
+	});
+
+	$router->map('GET', 'online', function() {
+		require_once __DIR__ . '/controllers/online/online.php';
+	});
+
 	$router->map('GET', 'soundboard', function() {
 		require_once __DIR__ . '/controllers/soundboard/soundboard.php';
 	});
@@ -40,8 +48,20 @@
 		require_once __DIR__ . '/controllers/smileys/smileys.php';
 	});
 
-	$router->map('GET', 'lua', function() {
-		require_once __DIR__ . '/controllers/lua/list.php';
+	$router->map('GET', 'modules-lua/[i:page]', function($page) {
+		require_once __DIR__ . '/controllers/lua/modules.php';
+	});
+
+	$router->map('GET', 'modules-lua', function() {
+		require_once __DIR__ . '/controllers/lua/modules.php';
+	});
+
+	$router->map('GET', 'code-lua/[i:id]', function($id) {
+		require_once __DIR__ . '/controllers/lua/code.php';
+	});
+
+	$router->map('GET', 'editor', function() {
+		require_once __DIR__ . '/controllers/editor/editor.php';
 	});
 
 	$router->map('GET', 'shop', function() {

@@ -4,7 +4,7 @@
 </ul>
 
 <div class="row">
-	<div class="col-lg-3 col-md-3">
+	<div class="col-lg-3 col-md-3 col-sm-6">
 		<div class="row-fluid">
 			<div class="panel panel-primary">
 				<div class="panel-heading">Données du forum</div>
@@ -61,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-9 col-md-9">
+	<div class="col-lg-9 col-md-9 col-sm-6">
 		<div class="panel panel-primary">
 			<div class="panel-heading clearfix">Données de Transformice <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
@@ -300,7 +300,7 @@
 	</div>
 </div>
 <div class="row">
-	<div class="col-lg-4 col-md-4">
+	<div class="col-lg-4 col-md-4 col-sm-4">
 		<div class="panel panel-primary">
 			<div class="panel-heading clearfix">Données de Bouboum <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
@@ -326,7 +326,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4 col-md-4">
+	<div class="col-lg-4 col-md-4 col-sm-4">
 		<div class="panel panel-primary">
 			<div class="panel-heading clearfix">Données de Fortoresse <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
@@ -361,7 +361,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="col-lg-4 col-md-4">
+	<div class="col-lg-4 col-md-4 col-sm-4">
 		<div class="panel panel-primary">
 			<div class="panel-heading clearfix">Données de Nekodancer <button class="pull-right btn btn-info btn-xs" data-toggle="tooltip" data-placement="left" title="" data-original-title="Prochainement">Version Graphique</button></div>
 			<div class="panel-body">
@@ -385,7 +385,7 @@
 		</div>
 	</div>
 </div>
-<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/ressources/css/player.css" />
+<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/player.css" />
 <script type="text/javascript">
 	$(function () {
 		$("[data-toggle='tooltip']").tooltip();
