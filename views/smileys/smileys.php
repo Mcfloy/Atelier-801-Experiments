@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
 	<li class="active">Atelier 801 Smileys</li>
 </ul>
 
@@ -27,7 +27,7 @@
 					<li><a class="btn btn-xs btn-link" href="#">Violent monkey</a> pour Opera.</li>
 				</ul>
 
-				<a class="btn btn-xs btn-link" href="https://github.com/Mcfloy/Atelier-801-Experiments/raw/master/resources/download/Atelier%20801%20Smileys.user.js">Télécharger le script</a> (Version 0.5)
+				<i class="material-icons md-18">get_app</i><a class="btn btn-xs btn-link" href="https://github.com/Mcfloy/Atelier-801-Experiments/raw/master/resources/download/Atelier%20801%20Smileys.user.js">Télécharger le script</a> (Version 0.5)
 			</div>
 		</div>
 	</div>

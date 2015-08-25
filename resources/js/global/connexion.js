@@ -16,7 +16,7 @@ $(document).ready(function() {
 				$("#button-connexion").removeClass("btn-primary").addClass("btn-warning");
 				$.ajax({
 					type: "POST",
-					url: "/Atelier%20801%20Experiments/controllers/global/connexion.php",
+					url: "/controllers/global/connexion.php",
 					data: {
 						login: login.val(),
 						password: password.val()

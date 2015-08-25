@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
 	<li class="active">Profil de <?php echo $player->getPseudo(); ?></li>
 </ul>
 
@@ -15,6 +15,9 @@
 								<td colspan="2">
 									<img src="<?php echo $player->getAvatarURL(); ?>"/>
 								</td>
+							</tr>
+							<tr>
+								<td>Id</td><td><?php echo $player->getIdA801(); ?></td>
 							</tr>
 							<tr>
 								<td>Joueur</td><td><?php echo $player->getPseudo(); ?></td>
@@ -41,13 +44,13 @@
 					<table class="table table-striped text-center">
 						<tbody>
 							<tr>
-								<td>Script Lua proposé(s)</td><td>1</td>
+								<td>Script Lua proposé(s)</td><td><a href="/modules-lua/author/Mcfloy" class="btn btn-xs btn-link">1</a></td>
 							</tr>
 							<tr>
-								<td>Questions résolues</td><td>160</td>
+								<td>Questions résolues</td><td><a href="#" class="btn btn-xs btn-link">160</a></td>
 							</tr>
 							<tr>
-								<td>Commentaires</td><td>321</td>
+								<td>Commentaires</td><td><a href="#" class="btn btn-xs btn-link">321</a></td>
 							</tr>
 							<tr>
 								<td>Date d'inscription</td><td>29/05/2011</td>
@@ -72,7 +75,13 @@
 								<td colspan="2"><strong>Informations</strong></td>
 							</tr>
 							<tr>
-								<td>Niveau</td><td><?php echo $player->getLevel(); ?></td>
+								<td>Niveau</td>
+								<td>
+									<span class="tooltip-span text-info" data-toggle="tooltip" data-placement="left" title=""
+									data-original-title="<?php echo 'Pour atteindre le niveau ' . ($player->getLevel() + 1) . ', vous devez récolter ' . $player->getRequiredExp() . ' points d\'expérience.'; ?>">
+									<?php echo $player->getLevel() . " (" . $player->getExp() . " EXP)" ;?>
+									</span>
+								</td>
 							</tr>
 							<tr>
 								<td>Titre en cours</td><td><?php echo $player->getCurrentTitle(); ?></td>
@@ -385,7 +394,7 @@
 		</div>
 	</div>
 </div>
-<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/player.css" />
+<link rel="stylesheet" type="text/css" href="/resources/css/player.css" />
 <script type="text/javascript">
 	$(function () {
 		$("[data-toggle='tooltip']").tooltip();

@@ -1,7 +1,7 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
-	<li><a href="/Atelier%20801%20Experiments/modules-lua">Liste des modules Lua</a></li>
-	<li class="active">Titre du module</li>
+	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
+	<li><a href="/modules-lua">Liste des modules Lua</a></li>
+	<li class="active"><?php echo $luaCode->getName(); ?></li>
 </ul>
 
 <div id="display-alert"></div>
@@ -9,35 +9,32 @@
 <div class="row">
 	<div class="col-lg-9 col-md-9">
 		<div class="panel panel-default">
-			<div class="panel-heading clearfix">Titre du module <span class="text-muted">développé par</span> <a href="#" class="">Mcfloy</a>
+			<div class="panel-heading clearfix"><?php echo $luaCode->getName(); ?>
+			<span class="text-muted">développé par</span> 
+			<a href="/modules-lua/author/<?php echo $luaCode->getAuthor(); ?>"><?php echo $luaCode->getAuthor(); ?></a>
 				<div class="pull-right">
-					<span class="label label-info">V0.4</span>
-					<span class="label label-success">Fonctionnel</span>
-					<button type="button" class="btn btn-xs btn-danger" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="J'aime ce module."><i class="fa fa-heart-o"></i></button>
-					<button type="button" class="btn btn-xs btn-primary btn-copy" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Copier le code dans le presse-papier."><i class="fa fa-clipboard"></i></button>
-					<button type="button" class="btn btn-xs btn-default" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Administration"><i class="fa fa-gear"></i></button>
+					<span class="label label-info">V<?php echo $luaCode->getVersion(); ?></span>
+					<?php echo $luaCode->getStatus(); ?>
+					<button type="button" class="btn btn-xs btn-primary btn-copy padding-1-5" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Copier dans le presse-papier"><i class="material-icons md-12">content_paste</i></button>
+					<?php
+						if (isset($_SESSION['member']))
+						{
+							echo '<button type="button" class="btn btn-xs btn-danger padding-1-5" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="J\'aime ce module"><i class="material-icons md-12">favorite</i></button>
+							<button type="button" class="btn btn-xs btn-warning padding-1-5" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Signaler un problème"><i class="material-icons md-12">report_problem</i></button>';
+							if ($_SESSION['member']->getLogin() == $luaCode->getAuthor() || $_SESSION['member']->getGrade() >= 5)
+								echo '<button type="button" class="btn btn-xs btn-default padding-1-5" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Administration"><i class="material-icons md-12">settings</i></button>';
+						}
+					?>
 				</div>
 			</div>
 			<div class="panel-body">
-				<i>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</i>
+				<i><?php echo $luaCode->getDescription(); ?></i>
 				<hr>
 				<a class="btn btn-primary btn-block" role="button" data-toggle="collapse" href="#code" aria-expanded="false" aria-controls="code">Voir le code source</a><br>
 				<div class="collapse" id="code">
-				<pre>
-<code class="lua">for nom, joueur in pairs(tfm.get.room.playerList) do
-  print(nom)
-end
-
-function eventChatCommand(name, message)
-  print(message)
-end
-</code>
-				</pre>
+					<pre>
+						<code class="lua"><?php echo $luaCode->getScript(); ?></code>
+					</pre>
 				</div>
 			</div>
 		</div>
@@ -47,18 +44,23 @@ end
 			<h4 class="pull-left" style="margin:0;height:26px;line-height:26px">Avis pertinants</h4>
 			<button class="pull-right btn btn-primary btn-xs">Voir les avis</button>
 		</div>
-		<blockquote>
-			<p>Une perle dans le codage parmi un océan de modules, ce module est un régal.</p>
-			<small>Aewing</small>
-		</blockquote>
-		<blockquote>
-			<p>Excellenticime !</p>
-			<small>Pikashu</small>
-		</blockquote>
-		<blockquote>
-			<p>C'nul ce module !</p>
-			<small>Tigrounette</small>
-		</blockquote>
+		<?php
+			if (($topComments = $luaCode->getTopComments()) != false)
+			{
+				foreach ($topComments as $comment)
+				{
+					echo
+					"<blockquote>
+						<p>" . $comment['comment'] . "</p>
+						<small>" . ucfirst($comment['pseudo']) . "</small>
+					</blockquote>";
+				}
+			}
+			else
+			{
+				echo "<p>Pas d'avis</p>";
+			}
+		?>
 	</div>
 </div>
 <div class="row" id="avis">
@@ -72,9 +74,14 @@ end
 		border: none !important;
 		border-radius: 0;
 	}
+
+	#display-alert
+	{
+		display: none;
+	}
 </style>
-<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/solarized_dark.css">
-<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/highlight.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/resources/css/solarized_dark.css">
+<script type="text/javascript" src="/resources/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 
@@ -88,7 +95,13 @@ end
 			textArea.select();
 			document.execCommand('copy');				
 			document.body.removeChild(textArea);
-			
+			$("#display-alert").html('<div class="alert alert-dismissible alert-success"><button type="button" class="close" data-dismiss="alert">×</button><strong>Succès</strong> : Code source copié dans votre presse-papier !</div>');
+			$("#display-alert").toggle("slow", function() {
+				setTimeout(function(){
+					$("#display-alert").toggle("slow");
+					$("#display-alert").html("");
+				}, 3000);
+			});
 		});
 	});
 </script>

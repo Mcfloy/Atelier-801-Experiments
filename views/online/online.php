@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
 	<?php
 		if (isset($name))
 		{
@@ -65,7 +65,7 @@ if (isset($name))
 		var onlineInput = $('#online-input').val();
 		if (onlineInput.length > 0)
 		{
-			window.location.href = "/Atelier%20801%20Experiments/online/" + onlineInput;
+			window.location.href = "/online/" + onlineInput;
 		}
 	});
 </script>

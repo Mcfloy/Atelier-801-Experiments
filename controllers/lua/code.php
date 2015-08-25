@@ -3,9 +3,12 @@
 
 	require_once 'modeles/lua/code.php';
 
-	$luaCode = new luaCode($id);
+	$luaCode = new luaCode(intval($id));
 
-	require_once 'views/lua/code.php';
+	if ($luaCode->getId() != -1)
+	{
+		require_once 'views/lua/code.php';
+	}
 
 	require_once 'views/global/footer.php';
 ?>

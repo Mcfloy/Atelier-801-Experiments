@@ -5,11 +5,12 @@
 		private $id;
 		private $login;
 		private $password;
+		private $grade;
 
 		public function __construct($login, $password)
 		{
 			require_once "bdd.php";
-			$req = $bdd->prepare('SELECT * FROM members WHERE pseudo = :pseudo');
+			$req = $bdd->prepare('SELECT id, pseudo, password, grade FROM members WHERE pseudo = :pseudo');
 			$req->execute(array(
 				'pseudo' => $login
 			));
@@ -24,6 +25,7 @@
 					$this->id = $fetch['id'];
 					$this->login = $login;
 					$this->password = $password;
+					$this->grade = $fetch['grade'];
 					$this->initialized = true;
 				}
 			}
@@ -42,6 +44,11 @@
 		public function getLogin()
 		{
 			return $this->login;
+		}
+
+		public function getGrade()
+		{
+			return $this->grade;
 		}
 	}
 ?>

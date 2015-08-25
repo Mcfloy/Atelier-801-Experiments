@@ -1,51 +1,29 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
 	<li class="active">Liste des modules Lua</li>
 </ul>
 
 <div class="row">
-	<div class="col-lg-4 col-md-4 col-sm-4">
-		<div class="panel panel-default">
-			<div class="panel-heading clearfix">
-				Lorem ipsum
-				<button class="pull-right btn btn-primary btn-xs btn-code" data-id="1">Voir le code</button>
-			</div>
-			<div class="panel-body">
-				Basic panel
-			</div>
-			<div class="panel-footer text-right">
-				<strong>Mcfloy</strong>, 2823 <span class="text-danger"><i class="fa fa-heart"></i></span>
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-4">
-		<div class="panel panel-default">
-			<div class="panel-heading clearfix">
-				Lorem ipsum
-				<button class="pull-right btn btn-primary btn-xs btn-code" data-id="2">Voir le code</button>
-			</div>
-			<div class="panel-body">
-				Basic panel
-			</div>
-			<div class="panel-footer text-right">
-				<strong>Tigrounette</strong>, 5 <span class="text-danger"><i class="fa fa-heart"></i></span>
-			</div>
-		</div>
-	</div>
-	<div class="col-lg-4 col-md-4 col-sm-4">
-		<div class="panel panel-default">
-			<div class="panel-heading clearfix">
-				Lorem ipsum
-				<button class="pull-right btn btn-primary btn-xs btn-code" data-id="3">Voir le code</button>
-			</div>
-			<div class="panel-body">
-				Basic panel
-			</div>
-			<div class="panel-footer text-right">
-				<strong>Pikashu</strong>, 32 <span class="text-danger"><i class="fa fa-heart"></i></span>
-			</div>
-		</div>
-	</div>
+	<?php
+		foreach($luaModules->getModules() as $module)
+		{
+			echo "
+			<div class='col-lg-4 col-md-4 col-sm-4'>
+				<div class='panel panel-default'>
+					<div class='panel-heading clearfix'>
+						" . utf8_encode($module['name']) . "
+						<button class='pull-right btn btn-primary btn-xs btn-code' data-id='" . $module['id'] . "'>Voir le code</button>
+					</div>
+					<div class='panel-body'>
+						" . utf8_encode($module['description']) . "
+					</div>
+					<div class='panel-footer text-right'>
+						<strong><a href='/modules-lua/author/" . $module['author'] . "'>" . $module['author'] . "</a></strong>, " . $module['likes'] . " <span class='text-danger'><i class='material-icons md-18'>favorite</i></span>
+					</div>
+				</div>
+			</div>";
+		}
+	?>
 </div>
 
 <div class="row">
@@ -67,7 +45,7 @@
 		<div class="well">
 			<form class="form-horizontal" id="form-module">
 				<fieldset>
-					<legend>Ajouter un module Lua</legend>
+					<legend><i class="material-icons md-18">note_add</i> Ajouter un module Lua</legend>
 					<div class="form-group">
 						<label for="form-module-name" class="col-lg-2 control-label">Nom du module</label>
 						<div class="col-lg-10">
@@ -98,6 +76,6 @@
 </div>
 <script type="text/javascript">
 	$(".btn-code").click(function() {
-		window.location.href = "/Atelier%20801%20Experiments/code-lua/" + $(this).data('id');
+		window.location.href = "/code-lua/" + $(this).data('id');
 	});
 </script>

@@ -50,10 +50,18 @@
 			return $this->stats_atelier801->id;
 		}
 
+		public function isAvatarBanned()
+		{
+			return $this->stats_atelier801->avatar_banned;
+		}
+
 		public function getAvatarURL()
 		{
 			$id = $this->getIdA801();
-			return "http://avatars.atelier801.com/" . intval(substr($id, -4)) . "/" . $id . ".jpg";
+			if ($this->isAvatarBanned())
+				return "http://avatars.atelier801.com/0/2000000000.jpg";
+			else
+				return "http://avatars.atelier801.com/" . intval(substr($id, -4)) . "/" . $id . ".jpg";
 		}
 
 		public function getMessages()
@@ -81,6 +89,25 @@
 		public function getLevel()
 		{
 			return $this->stats_transformice->level;
+		}
+
+		public function getExp()
+		{
+			return $this->stats_transformice->exp;
+		}
+
+		public function getRequiredExp()
+		{
+			$requiredExp = 30;
+			for ($i = 1; $i <= $this->getLevel() + 1; $i++) { 
+				if ($i <= 30)
+					$requiredExp = $requiredExp + ($i - 1) * 2;
+				else if ($i >= 31 && $i <= 60)
+					$requiredExp = $requiredExp + ($i - 1) * 10;
+				else
+					$requiredExp = $requiredExp + ($i - 1) * 15;
+			}
+			return $requiredExp - $this->getExp();
 		}
 
 		public function getCurrentTitle()

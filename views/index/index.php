@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
 	<li class="active">Accueil</li>
 </ul>
 
@@ -42,7 +42,7 @@
 					<li><i class="fa fa-check"></i> Page qui envoie une citation épique d'un modo/admin à chaque refresh.</li>
 					<li><i class="fa fa-arrow-right"></i> Liste de courses pour le magasin de TFM (avec prix en fraises/fromages et un rappel de ce que l'utilisateur souhaite) <span class="label label-info">1%</span></li>
 				</ul>
-				* Des salons 1 à 10.
+				* Des salons vanilla 1 à 10.
 			</div>
 		</div>
 	</div>

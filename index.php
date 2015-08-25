@@ -2,7 +2,7 @@
 	require_once __DIR__ . "/modeles/global/AltoRouter.php";
 
 	$router = new AltoRouter();
-	$router->setBasePath('/Atelier%20801%20Experiments/');
+	$router->setBasePath('/');
 
 	$router->map('GET', '', function() {
 		require_once __DIR__ . '/controllers/index/index.php';
@@ -22,10 +22,6 @@
 
 	$router->map('GET', 'player/[a:playerName]/', function($playerName) {
 		require_once __DIR__ . '/controllers/player/player.php';
-	});
-
-	$router->map('GET', 'player/[a:playerName]/lua', function($playerName) {
-		require_once __DIR__ . '/controllers/player/lua.php';
 	});
 
 	$router->map('GET', 'tribe/[*:tribeName]/', function($tribeName) {
@@ -48,12 +44,28 @@
 		require_once __DIR__ . '/controllers/smileys/smileys.php';
 	});
 
+	$router->map('GET', 'modules-lua/author/[*:author]/[i:page]', function($author, $page) {
+		require_once __DIR__ . '/controllers/lua/author.php';
+	});
+
+	$router->map('GET', 'modules-lua/author/[*:author]', function($author) {
+		require_once __DIR__ . '/controllers/lua/author.php';
+	});
+
 	$router->map('GET', 'modules-lua/[i:page]', function($page) {
 		require_once __DIR__ . '/controllers/lua/modules.php';
 	});
 
 	$router->map('GET', 'modules-lua', function() {
 		require_once __DIR__ . '/controllers/lua/modules.php';
+	});
+
+	$router->map('GET', 'code-lua/[i:id]/avis/[i:page]', function($id, $page) {
+		require_once __DIR__ . '/controllers/lua/avis.php';
+	});
+
+	$router->map('GET', 'code-lua/[i:id]/avis', function($id) {
+		require_once __DIR__ . '/controllers/lua/avis.php';
 	});
 
 	$router->map('GET', 'code-lua/[i:id]', function($id) {
@@ -66,6 +78,10 @@
 
 	$router->map('GET', 'shop', function() {
 		require_once __DIR__ . '/controllers/shop/shop.php';
+	});
+
+	$router->map('GET', 'test', function() {
+		require_once __DIR__ . '/controllers/test/test.php';
 	});
 
 	$match = $router->match();
