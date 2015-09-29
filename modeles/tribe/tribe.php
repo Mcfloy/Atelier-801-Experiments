@@ -1,11 +1,11 @@
 <?php
-	class Tribe
-	{
-		private $name;
+class Tribe
+{
+  private $name;
 
-		public function __construct($name)
-		{
-			
-		}
-	}
+  public function __construct($name)
+  {
+
+  }
+}
 ?>
