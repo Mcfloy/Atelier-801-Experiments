@@ -1,1 +1,5 @@
+# Don't share our database config
 modeles/global/bdd.php
+
+# Ignore astyle .orig files
+*.orig
