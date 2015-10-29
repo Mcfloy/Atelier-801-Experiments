@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><i class="fa fa-home"></i> <a href="/">Atelier 801 Experiments</a></li>
-	<li><a href="/modules-lua">Liste des modules Lua</a></li>
+	<li><i class="fa fa-home"></i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><a href="/Atelier%20801%20Experiments/modules-lua">Liste des modules Lua</a></li>
 	<li class="active">Modules de Mcfloy</li>
 </ul>
 
@@ -15,7 +15,7 @@
 				Basic panel
 			</div>
 			<div class="panel-footer text-right">
-				<strong><a href="/modules-lua/author/Mcfloy">Mcfloy</a></strong>, 2823 <span class="text-danger"><i class="fa fa-heart"></i></span>
+				<strong><a href="/Atelier%20801%20Experiments/modules-lua/author/Mcfloy">Mcfloy</a></strong>, 2823 <span class="text-danger"><i class="fa fa-heart"></i></span>
 			</div>
 		</div>
 	</div>
@@ -23,6 +23,6 @@
 
 <script type="text/javascript">
 	$(".btn-code").click(function() {
-		window.location.href = "/code-lua/" + $(this).data('id');
+		window.location.href = "/Atelier%20801%20Experiments/code-lua/" + $(this).data('id');
 	});
 </script>

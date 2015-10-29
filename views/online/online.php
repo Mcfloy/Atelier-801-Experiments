@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
 	<?php
 		if (isset($name))
 		{
@@ -15,11 +15,11 @@
 </ul>
 
 <div class="row">
-	<div class="col-lg-4 col-lg-offset-4">
+	<div class="col-lg-5 col-lg-offset-4">
 		<form id="online-form">
 			<div class="form-group">
 				<div class="input-group">
-					<span class="input-group-addon"><i class="fa fa-user"></i></span>
+					<span class="input-group-addon"><i class="material-icons md-18">face</i></span>
 					<input type="text" class="form-control" placeholder="Entrez un compte Atelier 801" id="online-input"/>
 					<span class="input-group-btn">
 						<button class="btn btn-default" type="submit" id="online-button">Rechercher</button>
@@ -37,7 +37,7 @@ if (isset($name))
 	<div class="row">
 		<div class="col-lg-3 col-md-3 col-sm-6">
 			<div class="alert alert-success">
-				<strong>Transformice</strong> : connecté (Serveur FR).
+				<i class="material-icons md-18">done</i><strong>Transformice</strong> : connecté (<img src="http://atelier801.com/img/pays/fr.png" />).
 			</div>
 		</div>
 		<div class="col-lg-3 col-md-3 col-sm-6">
@@ -65,7 +65,7 @@ if (isset($name))
 		var onlineInput = $('#online-input').val();
 		if (onlineInput.length > 0)
 		{
-			window.location.href = "/online/" + onlineInput;
+			window.location.href = "/Atelier%20801%20Experiments/online/" + onlineInput;
 		}
 	});
 </script>

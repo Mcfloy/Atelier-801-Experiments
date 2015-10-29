@@ -1,6 +1,6 @@
 <ul class="breadcrumb">
-	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
-	<li><a href="/modules-lua">Liste des modules Lua</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
+	<li><a href="/Atelier%20801%20Experiments/modules-lua">Liste des modules Lua</a></li>
 	<li class="active"><?php echo $luaCode->getName(); ?></li>
 </ul>
 
@@ -11,7 +11,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading clearfix"><?php echo $luaCode->getName(); ?>
 			<span class="text-muted">développé par</span> 
-			<a href="/modules-lua/author/<?php echo $luaCode->getAuthor(); ?>"><?php echo $luaCode->getAuthor(); ?></a>
+			<a href="/Atelier%20801%20Experiments/modules-lua/author/<?php echo $luaCode->getAuthor(); ?>"><?php echo $luaCode->getAuthor(); ?></a>
 				<div class="pull-right">
 					<span class="label label-info">V<?php echo $luaCode->getVersion(); ?></span>
 					<?php echo $luaCode->getStatus(); ?>
@@ -41,7 +41,7 @@
 	</div>
 	<div class="col-lg-3 col-md-3">
 		<div class="clearfix">
-			<h4 class="pull-left" style="margin:0;height:26px;line-height:26px">Avis pertinants</h4>
+			<h4 class="pull-left" style="margin:0;height:26px;line-height:26px"><i class="material-icons md-18">thumbs_up_down</i> Avis pertinants</h4>
 			<button class="pull-right btn btn-primary btn-xs">Voir les avis</button>
 		</div>
 		<?php
@@ -50,17 +50,25 @@
 				foreach ($topComments as $comment)
 				{
 					echo
-					"<blockquote>
+					"<blockquote class='green-blockquote'>
 						<p>" . $comment['comment'] . "</p>
 						<small>" . ucfirst($comment['pseudo']) . "</small>
 					</blockquote>";
 				}
 			}
-			else
-			{
-				echo "<p>Pas d'avis</p>";
-			}
 		?>
+		<blockquote class="green-blockquote">
+			<p>Une perle dans le codage parmi un océan de modules, ce module est un régal.</p>
+			<small>Aewing</small>
+		</blockquote>
+		<blockquote class="green-blockquote">
+			<p>Excellenticime !</p>
+			<small>Pikashu</small>
+		</blockquote>
+		<blockquote class="red-blockquote">
+			<p>C'nul ce module !</p>
+			<small>Tigrounette</small>
+		</blockquote>
 	</div>
 </div>
 <div class="row" id="avis">
@@ -75,13 +83,23 @@
 		border-radius: 0;
 	}
 
+	.red-blockquote
+	{
+		border-color: rgb(231,76,60);
+	}
+
+	.green-blockquote
+	{
+		border-color: rgb(142, 176, 33);
+	}
+
 	#display-alert
 	{
 		display: none;
 	}
 </style>
-<link rel="stylesheet" type="text/css" href="/resources/css/solarized_dark.css">
-<script type="text/javascript" src="/resources/js/highlight.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/solarized_dark.css">
+<script type="text/javascript" src="/Atelier%20801%20Experiments/resources/js/highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 
 

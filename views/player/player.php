@@ -1,5 +1,5 @@
 <ul class="breadcrumb">
-	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
 	<li class="active">Profil de <?php echo $player->getPseudo(); ?></li>
 </ul>
 
@@ -44,7 +44,7 @@
 					<table class="table table-striped text-center">
 						<tbody>
 							<tr>
-								<td>Script Lua proposé(s)</td><td><a href="/modules-lua/author/Mcfloy" class="btn btn-xs btn-link">1</a></td>
+								<td>Script Lua proposé(s)</td><td><a href="/Atelier%20801%20Experiments/modules-lua/author/Mcfloy" class="btn btn-xs btn-link">1</a></td>
 							</tr>
 							<tr>
 								<td>Questions résolues</td><td><a href="#" class="btn btn-xs btn-link">160</a></td>
@@ -394,7 +394,7 @@
 		</div>
 	</div>
 </div>
-<link rel="stylesheet" type="text/css" href="/resources/css/player.css" />
+<link rel="stylesheet" type="text/css" href="/Atelier%20801%20Experiments/resources/css/player.css" />
 <script type="text/javascript">
 	$(function () {
 		$("[data-toggle='tooltip']").tooltip();

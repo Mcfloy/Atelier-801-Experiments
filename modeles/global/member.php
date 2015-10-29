@@ -38,7 +38,7 @@
 
 		public function getId()
 		{
-			return $this->login;
+			return $this->id;
 		}
 
 		public function getLogin()

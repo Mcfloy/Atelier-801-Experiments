@@ -1,27 +1,29 @@
 <ul class="breadcrumb">
-	<li><i class="material-icons md-18">home</i> <a href="/">Atelier 801 Experiments</a></li>
+	<li><i class="material-icons md-18">home</i> <a href="/Atelier%20801%20Experiments/">Atelier 801 Experiments</a></li>
 	<li class="active">Liste des modules Lua</li>
 </ul>
 
+
 <div class="row">
 	<?php
-		foreach($luaModules->getModules() as $module)
+		foreach ($luaModules->getResults() as $module)
 		{
-			echo "
-			<div class='col-lg-4 col-md-4 col-sm-4'>
-				<div class='panel panel-default'>
-					<div class='panel-heading clearfix'>
-						" . utf8_encode($module['name']) . "
-						<button class='pull-right btn btn-primary btn-xs btn-code' data-id='" . $module['id'] . "'>Voir le code</button>
+			?>
+			<div class="col-lg-4 col-md-4 col-sm-4">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<?php echo $module['name']; ?>
+						<button class="pull-right btn btn-primary btn-xs btn-code" data-id="<?php echo $module['id']; ?>">Voir le code</button>
 					</div>
-					<div class='panel-body'>
-						" . utf8_encode($module['description']) . "
+					<div class="panel-body">
+						<i><?php echo $module['description']; ?></i>
 					</div>
-					<div class='panel-footer text-right'>
-						<strong><a href='/modules-lua/author/" . $module['author'] . "'>" . $module['author'] . "</a></strong>, " . $module['likes'] . " <span class='text-danger'><i class='material-icons md-18'>favorite</i></span>
+					<div class="panel-footer text-right">
+						<strong><a href="/Atelier%20801%20Experiments/modules-lua/author/<?php echo $module['author'];?>"><?php echo $module['author'];?></a></strong>, <?php echo $module['likes']; ?> <span class="text-danger"><i class="material-icons md-18">favorite</i></span>
 					</div>
 				</div>
-			</div>";
+			</div>
+			<?php
 		}
 	?>
 </div>
@@ -66,7 +68,7 @@
 					</div>
 					<div class="form-group">
 						<div class="col-lg-3 col-lg-offset-9">
-							<button type="submit" class="btn btn-block btn-success" disabled>Enregistrer le module</button>
+							<button class="btn btn-block btn-success" id="button-add-module" disabled>Enregistrer le module</button>
 						</div>
 					</div>
 				</fieldset>
@@ -75,7 +77,10 @@
 	</div>
 </div>
 <script type="text/javascript">
-	$(".btn-code").click(function() {
-		window.location.href = "/code-lua/" + $(this).data('id');
+	$(document).ready(function() {
+		$(".btn-code").click(function() {
+			window.location.href = "/Atelier%20801%20Experiments/code-lua/" + $(this).data('id');
+		});
+		$("#button-add-module").prop("disabled", true);
 	});
 </script>

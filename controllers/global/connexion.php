@@ -1,5 +1,5 @@
 <?php
-	require_once '../../modeles/global/member.php';
+	require_once '/modeles/global/member.php';
 	session_start();
 
 	if (isset($_SESSION['member'])) {

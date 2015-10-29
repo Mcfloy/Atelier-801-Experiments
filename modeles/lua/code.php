@@ -44,7 +44,7 @@
 
 		public function getName()
 		{
-			return utf8_encode($this->name);
+			return $this->name;
 		}
 
 		public function getAuthor()
@@ -54,7 +54,7 @@
 
 		public function getDescription()
 		{
-			return utf8_encode($this->description);
+			return $this->description;
 		}
 
 		public function getVersion()
@@ -64,17 +64,22 @@
 
 		public function getStatus()
 		{
+			/*
+			** 1 : Non fonctionnel
+			** 2 : Instable
+			** 3 : Fonctionnel
+			*/
 			if ($this->status == 1)
 				return '<span class="label label-danger">Non fonctionnel</span>';
 			else if ($this->status == 2)
-				return '<span class="label label-warning">Instable</span>';
+				return '<span class="label label-success">Instable</span>';
 			else if ($this->status == 3)
 				return '<span class="label label-success">Fonctionnel</span>';
 		}
 
 		public function getScript()
 		{
-			return htmlspecialchars(json_decode($this->script));
+			return json_decode($this->script);
 		}
 
 		public function getLikes()
@@ -95,7 +100,7 @@
 		public function getTopComments()
 		{
 			require __DIR__ . "/../global/bdd.php";
-			$req = $bdd->prepare('SELECT c.*, m.pseudo AS pseudo FROM lua_comments AS c INNER JOIN lua_scripts AS s ON c.id_script = s.id AND s.id = :id INNER JOIN members AS m ON c.id_pseudo = m.id');
+			$req = $bdd->prepare('SELECT c.*, m.pseudo AS pseudo FROM lua_comments AS c INNER JOIN lua_scripts AS s ON c.id_script = s.id AND s.id = 1 INNER JOIN members AS m ON c.id_pseudo = m.id');
 			$req->execute(array(
 				'id' => $this->id
 			));

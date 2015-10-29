@@ -3,15 +3,16 @@
 	{
 		private $results;
 
-		public function __construct($page)
+		public function __construct()
 		{
 			require_once __DIR__ . "/../global/bdd.php";
-			$req = $bdd->query('SELECT lua_scripts.*, members.pseudo AS author FROM lua_scripts INNER JOIN members WHERE lua_scripts.id_author = members.id ORDER BY lua_scripts.id DESC LIMIT 10');
-			$this->results = $req->fetchAll();
+			$req = $bdd->query('SELECT lua_scripts.id, members.pseudo as author, lua_scripts.name, lua_scripts.description, lua_scripts.likes FROM lua_scripts INNER JOIN members WHERE lua_scripts.id_author = members.id ORDER BY id DESC LIMIT 10');
+			$fetch = $req->fetchAll();
+			$this->results = $fetch;
 			$req->closeCursor();
 		}
 
-		public function getModules()
+		public function getResults()
 		{
 			return $this->results;
 		}
