@@ -21,7 +21,7 @@
         return false;
     }
 
-    if (JSON.parse(GM_getValue("smileys")).length === 0) {
+    if (GM_getValue("smileys") === undefined || JSON.parse(GM_getValue("smileys")).length === 0) {
         let tmpSmileys = [{
             title: "Transformice",
             liste: ["37a4f143.png", "3724f143.png", "36a4f143.png", "3624f143.png", "35a4f143.png", "3524f143.png", "34a4f143.png", "3424f143.png", "cba4f143.png", "cb24f143.png"]
