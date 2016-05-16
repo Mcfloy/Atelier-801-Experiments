@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Atelier 801 Smileys
 // @namespace    https://github.com/Mcfloy/Atelier-801-Experiments
-// @version      1.0.1
+// @version      1.0.2
 // @description  Great Smileys in Atelier 801 (Credits to Fxie & Melibellule)
 // @author       Mcfloy
 // @match        http://atelier801.com/*
@@ -191,10 +191,12 @@
     };
     if (document.querySelectorAll("[id^=cadre_editer_message_]").length > 0) {
         let nodes = document.querySelectorAll("[id^=cadre_editer_message_]");
-        for (let bloc of nodes) {
-            let id = bloc.querySelector('input[name="m"]').value,
-                node = addModuleSmileys(bloc.querySelector('fieldset legend'));
-            afficherSmileys(node, `edit_message_${id}`, indexSmileys);
+        for (let key in nodes) {
+            if (key >= 0) {
+                let id = nodes[key].querySelector('input[name="m"]').value,
+                    node = addModuleSmileys(nodes[key].querySelector('fieldset legend'));
+                afficherSmileys(node, `edit_message_${id}`, indexSmileys);
+            }
         }
     }
     if (document.querySelector('#cadre_nouveau_message fieldset legend') !== null) {
