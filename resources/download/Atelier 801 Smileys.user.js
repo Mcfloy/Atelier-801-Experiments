@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Atelier 801 Smileys
 // @namespace    https://github.com/Mcfloy/Atelier-801-Experiments
-// @version      1.0
+// @version      1.0.1
 // @description  Great Smileys in Atelier 801 (Credits to Fxie & Melibellule)
 // @author       Mcfloy
 // @match        http://atelier801.com/*
@@ -189,7 +189,7 @@
             smileysNode.appendChild(addButton);
         }
     };
-    if (document.querySelector("[id^=cadre_editer_message_]") !== null) {
+    if (document.querySelectorAll("[id^=cadre_editer_message_]").length > 0) {
         let nodes = document.querySelectorAll("[id^=cadre_editer_message_]");
         for (let bloc of nodes) {
             let id = bloc.querySelector('input[name="m"]').value,
