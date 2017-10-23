@@ -1,10 +1,10 @@
 // ==UserScript==
 // @name         Atelier 801 Smileys
 // @namespace    https://github.com/Mcfloy/Atelier-801-Experiments
-// @version      1.0.2
+// @version      1.0.3
 // @description  Great Smileys in Atelier 801 (Credits to Fxie & Melibellule)
 // @author       Mcfloy
-// @match        http://atelier801.com/*
+// @match        *://atelier801.com/*
 // @grant GM_setValue
 // @grant GM_getValue
 // ==/UserScript==
